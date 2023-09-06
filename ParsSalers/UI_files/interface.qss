@@ -1,0 +1,113 @@
+
+QMainWindow
+{
+    color: #37946e;
+    background-color: rgb(65, 91, 141); 
+    border: 1px solid black;
+}
+
+
+
+QLineEdit
+{
+    margin-top: 1px;
+    width: 94;
+    height: 24;
+    background-color: rgb(61, 145, 182);
+    border: 1px solid black;
+    border-radius: 5px;
+    font: 9pt "MS Shell Dlg 2";
+    color: #202D32;
+    
+}
+
+
+QPushButton
+{
+    width: 94;
+    height: 23;
+    background-color: rgb(61, 145, 182);
+    border: 1px solid black;
+    border-style: outset;
+    border-radius: 5px;
+    font: 9pt "MS Shell Dlg 2";
+    color: #202D32;
+}
+
+
+QPushButton:hover
+{   
+    background-color: #1888AF;
+}
+
+QPushButton:pressed
+{
+    background-color: #0B2B56;
+    color: #438498;
+}
+
+
+QLabel
+{
+    font: 9pt "MS Shell Dlg 2";
+    color: #202D32;
+}
+
+
+
+QListWidget
+{
+    border: 1px solid black;
+    background-color: #1B2F4B;
+    alternate-background-color: yellow;
+    border-radius: 5px;
+    font: 9pt "MS Shell Dlg 2";
+    color: #438498;
+    padding: 4px
+}
+
+QListWidget:item:hover
+{
+    background-color: #29336e;
+}
+
+QListWidget::item:selected
+{
+    border: 1px solid #37946e;
+    color: rgb(61, 145, 182);
+}
+
+QListWidget::item:selected:active
+{
+    show-decoration-selected: 1;
+}
+
+
+
+
+QScrollBar:horizontal 
+{
+    background: #1F587A;
+    height: 10px;
+    margin: 0px 20px 0 20px;
+}        
+      
+ QScrollBar::add-line:horizontal 
+{
+    background: #1F587A;
+    width: 20px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal 
+{
+    background: #1F587A;
+    width: 20px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+
+
+QStatusBar#statusbar{}
